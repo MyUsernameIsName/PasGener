@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Passwd Generator</title>
+        <link rel="stylesheet" type="text/css" href="popup.css"/>
+    </head>
+    <body>
+        <h1>PasGener</h1>
+        <div class="settings">
+            <div class="specSymbol">
+                <label>
+                    <input type="checkbox" id="specSymbol">
+                    &nbsp&nbsp&nbspSpecial symbols % * ( ) ? ! @ # $ ~
+                </label>
+                <label id="hardSpecSymbolLabel">
+                    <input type="checkbox" id="hardSpecSymbol">
+                    &nbsp&nbsp&nbspHard special symbols ! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+                </label>
+                <label id="superHardSpecSymbolLabel">
+                    <input type="checkbox" id="superHardSpecSymbol">
+                    &nbsp&nbsp&nbspSuper hard special symbols (with unprintable simbols)
+                </label>
+            </div>
+            <input type="checkbox" id="similarSymbol" style="margin-left: 9px">
+            <label for="similarSymbol" id="similarSymbolLabel">
+                &nbsp&nbsp&nbspRemove similar symbols 0 O o 1 I l
+            </label>
+            <label>
+                Password's length&nbsp&nbsp&nbsp
+                <input type="range" id="passwordLength" min="7" max="30" step="0.1">
+                <span id="passwordLengthValue"></span>
+            </label>
+            <button type="button" id="saveSet">Save</button>
+            <script src="popup.js"></script>
+        </div>
+    </body>
+</html>
